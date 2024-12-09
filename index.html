@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekolojik Kredi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sol Menü -->
+        <div class="left-menu">
+            <h2 class="menu-title">Menü</h2>
+            <button class="menu-btn" onclick="showInfo('ekolojikKredi')">Ekolojik Kredi</button>
+            <button class="menu-btn" onclick="showInfo('geriDonusum')">Geri Dönüşüm Nedir?</button>
+            <button class="menu-btn" onclick="showInfo('bizeUlasin')">Bize Ulaşın</button>
+            <div id="totalWasteCounter" class="total-waste">Toplam Atık: 0 kg</div>
+        </div>
+
+        <!-- Sağ İçerik -->
+        <div class="right-content">
+            <!-- Ekolojik Kredi Sekmesi -->
+            <div id="ekolojikKredi" class="info-section">
+                <h2>Ekolojik Kredi Nedir?</h2>
+                <p>Ekolojik kredi, çevreyi korumaya yönelik yapılan katkıları ödüllendiren bir sistemdir. Öğrenciler, geri dönüşüm ve atık yönetimi konularında yaptıkları katkılara göre kredi kazanır.</p>
+                <!-- Form ve diğer içerikler buraya eklenecek -->
+            </div>
+
+            <!-- Geri Dönüşüm Sekmesi -->
+            <div id="geriDonusum" class="info-section" style="display:none;">
+                <h2>Geri Dönüşüm Nedir?</h2>
+                <p>Geri dönüşüm, kullanılmış veya atılacak maddelerin yeniden işlenerek kullanılabilir hale getirilmesidir. Atıkların doğru bir şekilde ayrıştırılması, çevremize sağladığımız en büyük katkılardan biridir.</p>
+            </div>
+
+            <!-- Bize Ulaşın Sekmesi -->
+            <div id="bizeUlasin" class="info-section" style="display:none;">
+                <h2>Bize Ulaşın</h2>
+                <p>Email: <a href="mailto:ekolojikkreditubitak@gmail.com">ekolojikkreditubitak@gmail.com</a></p>
+                <p>Okul: Torbalı Anadolu Lisesi, İzmir Torbalı</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
